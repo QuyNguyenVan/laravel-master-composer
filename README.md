@@ -1,7 +1,7 @@
 ## Laravel 4 Master Composer, Unit Tests, & master.blade.php
 
 Uses HTML5 Boiler Plate (modified to remove IE classes) and Twitter Bootstrap's base HTML, but you'll have to add asset handling as you desire.
-The purpose of this is create a solid, well-tested view composer for Laravel projects. 
+The purpose of this is create a solid, well-tested view composer & master.blade.php for Laravel projects. 
 
 
 #### Features
