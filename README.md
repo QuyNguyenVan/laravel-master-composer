@@ -49,7 +49,7 @@ Note: Laravel 4 Beta 4 currently returns an incorrect value for `Lang::get('app.
 
 	`return View::make('hello')->with('meta_description', 'This is an example meta description.');` 
 
-- Set meta robots to not index certain pages in search engines (this defaults to 'index,follow' unless you override it here):
+- Set meta robots not to index certain pages in search engines (the default is 'index,follow' if unspecified):
 
 	`return View::make('hello')->with('meta_robots', 'noindex,nofollow');`
 
