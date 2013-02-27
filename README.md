@@ -15,6 +15,7 @@ The purpose of this is create a solid, well-tested view composer for Laravel pro
 	- the homepage ('home')
 - Provides a solid HTML5BP base for your master template (You can alter this HTML easily if you prefer to use Zurb Foundation instead of Bootstrap.)
 
+Note: Laravel 4 Beta 4 currently returns an incorrect value for `Lang::get('app.language');` so the current locale is simply harded as `en-us`. This will be changed after Laravel 4 is fixed.
 
 #### How to install
 
@@ -60,7 +61,7 @@ The purpose of this is create a solid, well-tested view composer for Laravel pro
 
 	`return View::make('hello')->with('body_class', ['aaa', 'bbb']);`
 
-Snake case variable names were chosen with the thought that this may ease passing data retrieved from the database (which uses snake case column names like page_title and meta_description) to the views. This may change later. Time will tell.
+Snake case variable names were chosen with the thought that this may ease passing data retrieved from the database (which Laravel's convention is to uses snake case column names such as page_title and meta_description) to the views. This may change later. Time will tell.
 
 #### Contribute
 
