@@ -4,7 +4,7 @@ Uses HTML5 Boiler Plate (modified to remove IE classes) and Twitter Bootstrap's 
 The purpose of this is create a solid, well-tested view composer & master.blade.php for Laravel projects. 
 
 
-#### Features
+### Features
 
 - Allows you to easily pass the page title, meta description, meta robots, & custom body classes to your master template
 - Automatically sets the HTML language attribute
@@ -13,11 +13,11 @@ The purpose of this is create a solid, well-tested view composer & master.blade.
   	- the two-letter, ISO 639-1 language code (e.g. en, es)
 	- the locale (e.g. en-us, es-mx)
 	- the homepage ('home')
-- Provides a solid HTML5BP base for your master template (You can alter this HTML easily if you prefer to use Zurb Foundation instead of Bootstrap.)
+- Provides a solid HTML5BP base for your master template
 
-Note: Laravel 4 Beta 4 currently returns an incorrect value for `Lang::get('app.language');` so the current locale is simply harded as `en-us`. This will be changed after Laravel 4 is fixed.
+_Note: Laravel 4 Beta 4 currently returns an incorrect value for `Lang::get('app.language');` so the current locale is simply harded as `en-us`. This will be changed after Laravel 4 is fixed._
 
-#### How to install
+### How to Install
 
 1. Save master.blade.php to `app/views/layouts/master.blade.php`
 2. Save MasterComposer.php to `app/composers/MasterComposer.php` (create the 'composers' directory), add `"app/composers",` to your composer.json's autoload block, and then run `composer dump-autoload`.
@@ -30,7 +30,7 @@ Note: Laravel 4 Beta 4 currently returns an incorrect value for `Lang::get('app.
 9. Add all CSS or JS assets that you need and add their link paths to master.blade.php (e.g. Bootstrap CSS & JS, HTML5Shiv.js or modernizr, and add you app.css & app.js)
 10. Add your analytics JS snippet.
 
-#### How to use
+### How to Use
 
 	
 - Set a custom page title:  
@@ -63,11 +63,11 @@ Note: Laravel 4 Beta 4 currently returns an incorrect value for `Lang::get('app.
 
 Snake case variable names were chosen with the thought that this may ease passing data retrieved from the database (which Laravel's convention is to uses snake case column names such as page_title and meta_description) to the views. This may change later. Time will tell.
 
-#### Contribute
+### Contribute
 
 - Know of any RTL (right to left) languages that I missed? Please let me know. I currently have:  
 `'ar', 'dv', 'fa', 'ha', 'he', 'ps', 'ur', 'yi'`
 
-#### Security note
+### Security Note
 
 This is safe against XSS attacks, so rest assured. Laravel 4 escapes all data output using its blade echo tags `{{ $foo }}` and uses htmlentities's ENT_QUOTES parameter. Consequently, this is safe against XSS attacks even if your page title and meta description are user-provided data retrieved from a database.
