@@ -11,7 +11,7 @@
     <link rel="canonical" href="http://www.domain.com{{ $canonical }}">
 
     {{-- Stylesheets --}}
-    <link rel="stylesheet" href="/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/css/vendor/bootstrap.min.css">
     <link rel="stylesheet" href="/css/app.css">
 
     {{-- Icons --}}
@@ -24,7 +24,7 @@
 
     {{-- HTML5 shim, for IE6-8 support of HTML5 elements --}}
     <!--[if lt IE 9]>
-        <script src="/js/html5shiv.js"></script>
+        <script src="/js/vendor/html5shiv.js"></script>
     <![endif]-->
 </head>
 <body class="{{ $body_class }}">
@@ -64,8 +64,8 @@
 
     {{-- Javascript --}}
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-    <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.9.1.min.js"><\/script>')</script>
-    <script src="/js/libs/bootstrap.min.js"></script>
+    <script>window.jQuery || document.write('<script src="js/vendor/jquery.min.js"><\/script>')</script>
+    <script src="/js/vendor/bootstrap.min.js"></script>
     <script src="/js/app.js"></script>
 
     {{-- Analytics --}}
