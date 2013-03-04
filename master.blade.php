@@ -15,10 +15,12 @@
     <link rel="stylesheet" href="/css/app.css">
 
     {{-- Icons --}}
-    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/img/ico/apple-touch-icon-144-precomposed.png">
-    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="/img/ico/apple-touch-icon-114-precomposed.png">
-    <link rel="apple-touch-icon-precomposed" sizes="72x72"   href="/img/ico/apple-touch-icon-72-precomposed.png">
-    <link rel="apple-touch-icon-precomposed"                 href="/img/ico/apple-touch-icon-57-precomposed.png">
+    {{-- Also add a 16px x 16px favicon.ico in the web root --}}
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/ico/apple-touch-icon-144-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="/ico/apple-touch-icon-114-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72"   href="/ico/apple-touch-icon-72-precomposed.png">
+    <link rel="apple-touch-icon-precomposed"                 href="/ico/apple-touch-icon-57-precomposed.png">
+    <link rel="shortcut icon"                                href="/ico/favicon.png">
 
     {{-- HTML5 shim, for IE6-8 support of HTML5 elements --}}
     <!--[if lt IE 9]>
