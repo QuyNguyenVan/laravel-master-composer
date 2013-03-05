@@ -23,6 +23,7 @@ _Note: Laravel 4 Beta 4 currently returns an incorrect value for `Lang::get('app
 2. Save MasterComposer.php to `app/composers/MasterComposer.php` (create the 'composers' directory), add `"app/composers",` to your composer.json's autoload block, and then run `composer dump-autoload`.
 3. Save MasterComposerTest.php to `app/tests/viewcomposers/MasterComposerTest.php` (create the 'viewcomposers' directory).
 4. Add `View::composer('layouts.master', 'MasterComposer');` somewhere within your app/routes.php so that Laravel will call the view composer whenever the master template is used.
+5. Add `$_SERVER['REQUEST_URI'] = '/';` to app/start/artisan.php to prevent an undefined variable error when phpunit functional tests are run using the command line.
 5. Update "Site Name" (in the page title), "http://www.domain.com" (within the canonical url), "Company Name" (in the copyright notice) with your own names on the master.blade.php template.
 6. Add a favicon.ico to your web root (16px x 16px)
 7. Add all touch icons to your image directory and update the paths to them on the master.blade.php template.
