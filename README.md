@@ -24,12 +24,12 @@ _Note: Laravel 4 Beta 4 currently returns an incorrect value for `Lang::get('app
 3. Save MasterComposerTest.php to `app/tests/viewcomposers/MasterComposerTest.php` (create the 'viewcomposers' directory).
 4. Add `View::composer('layouts.master', 'MasterComposer');` somewhere within your app/routes.php so that Laravel will call the view composer whenever the master template is used.
 5. Add `$_SERVER['REQUEST_URI'] = '/';` to app/start/artisan.php to prevent an undefined variable error when phpunit functional tests are run using the command line.
-5. Update "Site Name" (in the page title), "http://www.domain.com" (within the canonical url), "Company Name" (in the copyright notice) with your own names on the master.blade.php template.
-6. Add a favicon.ico to your web root (16px x 16px)
-7. Add all touch icons to your image directory and update the paths to them on the master.blade.php template.
-8. Download JQuery and update the path to your local fallback copy of JQuery.
-9. Add all CSS or JS assets that you need and add their link paths to master.blade.php (e.g. Bootstrap CSS & JS, HTML5Shiv.js or modernizr, and add you app.css & app.js)
-10. Add your analytics JS snippet.
+6. Update "Site Name" (in the page title), "http://www.domain.com" (within the canonical url), "Company Name" (in the copyright notice) with your own names on the master.blade.php template.
+7. Add a favicon.ico to your web root (16px x 16px)
+8. Add all touch icons to your image directory and update the paths to them on the master.blade.php template.
+9. Download JQuery and update the path to your local fallback copy of JQuery.
+10. Add all CSS or JS assets that you need and add their link paths to master.blade.php (e.g. Bootstrap CSS & JS, HTML5Shiv.js or modernizr, and add you app.css & app.js)
+11. Add your analytics JS snippet.
 
 ### How to Use
 
