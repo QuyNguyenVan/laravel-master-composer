@@ -22,9 +22,10 @@
     <link rel="apple-touch-icon-precomposed"                 href="/ico/apple-touch-icon-57-precomposed.png">
     <link rel="shortcut icon"                                href="/ico/favicon.png">
 
-    {{-- HTML5 shim, for IE6-8 support of HTML5 elements --}}
+    {{-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries --}}
     <!--[if lt IE 9]>
         <script src="/js/vendor/html5shiv.js"></script>
+        <script src="/js/vendor/respond.min.js"></script>
     <![endif]-->
 </head>
 <body class="{{ $body_class }}">
