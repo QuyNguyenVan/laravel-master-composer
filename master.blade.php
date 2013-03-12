@@ -1,5 +1,5 @@
 <!doctype html>
-<html dir="{{ $language_direction }}" lang="{{ $current_locale }}" class="no-js">
+<html lang="{{ $current_locale }}" dir="{{ $language_direction }}" class="no-js">
 <head>
     <meta charset="utf-8">
     <title>{{ $page_title }}Site Name</title>
