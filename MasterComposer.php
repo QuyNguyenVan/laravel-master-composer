@@ -177,6 +177,10 @@ class MasterComposer {
             $view['body_class'] .= ' '.$custom_classes;
         }
 
+        if (Auth::check())
+        {
+            $view['body_class'] .= ' logged-in';
+        }
 
         /**
          * Canonical URL
