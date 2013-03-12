@@ -12,7 +12,8 @@ The purpose of this is create a solid, well-tested view composer & master.blade.
 - Automatically adds body classes for:
   	- the two-letter, ISO 639-1 language code (e.g. en, es)
 	- the locale (e.g. en-us, es-mx)
-	- the homepage ('home')
+	- the homepage ("home")
+	- the user's status ("logged-in")
 - Provides a solid HTML5BP base for your master template
 
 _Note: Laravel 4 Beta 4 currently returns an incorrect value for `Lang::get('app.language');` so the current locale is simply harded as `en-us`. This will be changed after Laravel 4 is fixed._
